@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pennsylvania Role Play</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JcDesigns Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0f0f10;
+      color: #f5f5f5;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    header {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      padding: 2rem;
+      border-radius: 1rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 30px rgba(0, 114, 255, 0.3);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    section {
+      margin-bottom: 3rem;
+      background: #1a1a1d;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #00c6ff;
+    }
+
+    ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    .contact {
+      background: #111;
+      border: 1px solid #0072ff;
+    }
+
+    .contact p {
+      font-size: 1.1rem;
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #00c6ff;
+      text-decoration: none;
+    }
+  </style>
 </head>
+
 <body>
+  <header>
+    <h1>Welcome to JcDesigns Developer Portfolio</h1>
+    <p>I specialize in creating custom FiveM content including chains, liveries, and full server setups.</p>
+  </header>
 
-<div class="banner"></div> <!-- Banner Background -->
+  <section>
+    <h2>What I Do</h2>
+    <ul>
+      <li><strong>Chains:</strong> Custom modeled chains for FiveM characters, made with detail and realism.</li>
+      <li><strong>Liveries:</strong> High-quality custom liveries for emergency services, civilian vehicles, and more.</li>
+      <li><strong>Server Setups:</strong> Full FiveM server configurations including maps, scripts, and optimization.</li>
+      <li><strong>Resource Management:</strong> Organizing and maintaining your server’s resources for performance and clarity.</li>
+      <li><strong>Custom Scripts:</strong> Lightweight, useful, and unique scripts tailored to your roleplay needs.</li>
+    </ul>
+  </section>
 
-<header>
-    Pennsylvania Role Play
-</header>
+  <section>
+    <h2>Why Work With Me?</h2>
+    <ul>
+      <li>Fast turnaround times with attention to detail.</li>
+      <li>Experience with both QBCore and standalone setups.</li>
+      <li>Support after delivery to ensure everything runs smoothly.</li>
+      <li>Custom requests welcomed – I bring your ideas to life.</li>
+    </ul>
+  </section>
 
-<div class="content">
-    <section>
-        <div class="section-title">RP Rules</div>
-        <ul>
-            <li>Respect all players and staff.</li>
-            <li>No trolling or griefing.</li>
-            <li>Follow all server-specific rules.</li>
-            <li>Use appropriate language.</li>
-        </ul>
-    </section>
+  <section>
+    <h2>JcDesigns Terms and Conditions</h2>
+    <ul>
+      <li>Failure to give such notice may be regarded as a breach of contract. The developer must be notified at least twenty-four hours before the termination of any employment or contract.</li>
+      <li>People working for FiveM are employed in various capacities, largely confined to FiveM and other software-related projects.</li>
+      <li>Clients and employers are encouraged to keep adequate backups and safeguards. The developer is not responsible for any data corruption, loss of files or data, or any other software failure resulting from third-party applications, modifications, or unforeseen technical problems.</li>
+      <li>The Builder reserves the right to halt the service in case payments are not made according to the agreed terms. All payments are to be agreed before work begins.</li>
+      <li>Unless specifically permitted to, the developer must keep confidential all such privileged information as the client might share with him.</li>
+      <li>The developer retains ownership of any custom scripts or programs until full payment is made. Unless otherwise specified, the owner owns the finished work subject to prior agreement.</li>
+      <li>Additions require compensation. Support and amendments will only be provided on a contract basis.</li>
+      <li>CFailure to comply may result in termination of services. By engaging the services of the developer, clients agree to these terms and conditions.</li> 
+    </ul>
+  </section>
 
-    <section>
-        <div class="section-title">Discord Rules</div>
-        <ul>
-            <li>No spamming.</li>
-            <li>Keep discussions civil and respectful.</li>
-            <li>No NSFW content.</li>
-            <li>Use the appropriate channels for topics.</li>
-        </ul>
-    </section>
 
-    <section>
-        <div class="section-title">How to Connect</div>
-        <ul>
-            <li>Download and install FiveM from the official website.</li>
-            <li>Open the FiveM client.</li>
-            <li>Search for the server by its name or IP address.</li>
-            <li>Click on 'Connect' to join the game.</li>
-        </ul>
-    </section>
+  <section class="contact">
+    <h2>How to Contact Me</h2>
+    <p><strong>Discord:</strong> <a href="https://discord.com/users/903853476067541012">JcDesigns</a></p>
+    <p><strong>Email:</strong> <a href="mailto:dev.jcdesigns@gmail.com">dev.jcdesigns@gmail.com</a></p>
+  </section>
 
-    <section>
-        <a href="fivem://connect/104.234.214.204:30120" class="btn">Connect to Server</a>
-    </section>
-</div>
+<script>
+  (function() {
+    const threshold = 160;
+    let devtools = false;
 
-<footer>
-    © 2025 Pennsylvania RolePlay. All Rights Reserved.
-</footer>
+    setInterval(() => {
+      const start = performance.now();
+      debugger;
+      const end = performance.now();
+      if (end - start > threshold) {
+        if (!devtools) {
+          devtools = true;
+          window.location.href = "about:blank"; // kicks user to blank page
+        }
+      }
+    }, 1000);
+  })();
+</script>
+
 
 </body>
+
 </html>

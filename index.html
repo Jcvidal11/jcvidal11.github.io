@@ -67,6 +67,34 @@
       color: #00c6ff;
       text-decoration: none;
     }
+
+    nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--bg-color);
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+nav a {
+  margin: 0 1.2rem;
+  color: var(--accent);
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+}
   </style>
 </head>
 

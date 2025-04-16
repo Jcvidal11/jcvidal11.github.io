@@ -70,14 +70,26 @@
   </style>
 </head>
 
+<nav>
+  <div>
+    <a href="#top">Home</a>
+    <a href="#what">What I Do</a>
+    <a href="#why">Why Work With Me</a>
+    <a href="#terms">Terms</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <button class="toggle-theme">Toggle Theme</button>
+</nav>
+
 <body>
   <header>
+    <header id="top">
     <h1>Welcome to JcDesigns Developer Portfolio</h1>
     <p>I specialize in creating custom FiveM content including chains, liveries, and full server setups.</p>
   </header>
 
-  <section>
-    <h2>What I Do</h2>
+  <section id="what">
+  <h2>What I Do</h2>
     <ul>
       <li><strong>Chains:</strong> Custom modeled chains for FiveM characters, made with detail and realism.</li>
       <li><strong>Liveries:</strong> High-quality custom liveries for emergency services, civilian vehicles, and more.</li>
@@ -87,8 +99,8 @@
     </ul>
   </section>
 
-  <section>
-    <h2>Why Work With Me?</h2>
+  <section id="why">
+  <h2>Why Work With Me</h2>
     <ul>
       <li>Fast turnaround times with attention to detail.</li>
       <li>Experience with both QBCore and standalone setups.</li>
@@ -97,8 +109,8 @@
     </ul>
   </section>
 
-  <section>
-    <h2>JcDesigns Terms and Conditions</h2>
+  <section id="terms">
+  <h2>JcDesigns Terms and Conditions</h2>
     <ul>
       <li>Failure to give such notice may be regarded as a breach of contract. The developer must be notified at least twenty-four hours before the termination of any employment or contract.</li>
       <li>People working for FiveM are employed in various capacities, largely confined to FiveM and other software-related projects.</li>
@@ -112,7 +124,8 @@
   </section>
 
 
-  <section class="contact">
+<section id="contact">
+  <h2>Contact Me</h2>
     <h2>How to Contact Me</h2>
     <p><strong>Discord:</strong> <a href="https://discord.com/users/903853476067541012">JcDesigns</a></p>
     <p><strong>Email:</strong> <a href="mailto:dev.jcdesigns@gmail.com">dev.jcdesigns@gmail.com</a></p>
@@ -120,7 +133,14 @@
 
 <script>
   (function() {
-    
+    const threshold = 160;
+    let devtools = false;
+
+    setInterval(() => {
+      const start = performance.now();
+      debugger;
+      const end = performance.now();
+      if (end - start > threshold) {
         if (!devtools) {
           devtools = true;
           window.location.href = "about:blank"; // kicks user to blank page

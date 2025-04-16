@@ -120,14 +120,7 @@
 
 <script>
   (function() {
-    const threshold = 160;
-    let devtools = false;
-
-    setInterval(() => {
-      const start = performance.now();
-      debugger;
-      const end = performance.now();
-      if (end - start > threshold) {
+    
         if (!devtools) {
           devtools = true;
           window.location.href = "about:blank"; // kicks user to blank page
